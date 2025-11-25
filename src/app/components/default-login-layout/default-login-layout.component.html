@@ -1,14 +1,20 @@
 <main>
-    <section>
+    <section class="form-section">
         <img src="assets/svg/logo.svg" alt="Imagem da logo">
-        <h2></h2>
-        <button></button>
-        <div>
-            <span>Or</span>
+        <h2> {{ title }}</h2>
+        <ng-content></ng-content>
+        <div class="btn-wrapper">
+            <button class="btn-primary"> {{ primaryBtnText }}</button>
+            <div class="divider">
+                <div></div>
+                <span>Or</span>
+                <div></div>
+            </div>
+            <button class="btn-secondary">{{ secondaryBtnText }}</button>
         </div>
-        <button></button>
+
     </section>
-    <section>
+    <section class="main-section">
         <h1>You should, MoveIt!</h1>
         <img src="assets/svg/main-illustration.svg" alt="Ilustração da página">
     </section>
